@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import "./App.css"
+import Content from "./components/Content"
+import Footer from "./components/Footer"
+import Sidebar from "./components/Sidebar"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [toggle, setToggle] = useState(false)
+
+    const handleToggle = () => {
+        setToggle((prev) => !prev)
+    }
+
+    return (
+        <div className="container">
+            <Sidebar toggle={toggle} />
+            <button className="btn__sidebar" onClick={handleToggle}>
+                <i className="fa-solid fa-bars"></i>
+            </button>
+            <div className="main">
+                <Content />
+                <Footer />
+            </div>
+        </div>
+    )
 }
 
-export default App;
+export default App

@@ -1,0 +1,9 @@
+.footer {
+    width: 100%;
+}
+
+.footer p {
+    width: 70%;
+    margin: 30px auto;
+    color: #3e3e3e;
+}
