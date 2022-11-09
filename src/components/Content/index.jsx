@@ -1,4 +1,8 @@
 import React from "react"
+import icon1 from "../../images/css-icon 1.png"
+import icon2 from "../../images/html-icon 1.png"
+import logo from "../../images/logoNCC 1.png"
+import icon3 from "../../images/url-icon 1.png"
 import "./Content.css"
 
 Content.propTypes = {}
@@ -8,7 +12,7 @@ function Content(props) {
         <div class="content">
             <div class="content__container">
                 <div class="content__logo">
-                    <img src="./images/logoNCC 1.png" alt="logoNCC" />
+                    <img src={logo} alt="logoNCC" />
                 </div>
                 <div class="content__main">
                     <h4>Lorem ipsum dolor sit asmet?</h4>
@@ -32,7 +36,7 @@ function Content(props) {
                             Lorem ipsum dolor sit asmet
                         </h3>
                         <div class="content__item--main">
-                            <img src="./images/css-icon 1.png" alt="" />
+                            <img src={icon1} alt="" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Sed non dui sodales, faucibus
@@ -53,7 +57,7 @@ function Content(props) {
                             Lorem ipsum dolor sit asmet
                         </h3>
                         <div class="content__item--main">
-                            <img src="./images/html-icon 1.png" alt="" />
+                            <img src={icon2} alt="" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Sed non dui sodales, faucibus
@@ -74,7 +78,7 @@ function Content(props) {
                             Lorem ipsum dolor sit asmet
                         </h3>
                         <div class="content__item--main">
-                            <img src="./images/url-icon 1.png" alt="" />
+                            <img src={icon3} alt="" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Sed non dui sodales, faucibus
